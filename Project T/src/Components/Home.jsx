@@ -1,13 +1,14 @@
-import React from 'react'
-import "./Home.css"
+import React from "react";
+import { ImageChanger } from "./ImageChanger";
 
-const Home = () => {
+export const Hom = () => {
     return (
-        <>
-            <p>
-                Home
-            </p>
-        </>
+        <div className="homepage">
+            <div className="banner">
+                <ImageChanger/>
+            </div>
+        </div>
     )
 }
-export default Home
+
+export default Hom;

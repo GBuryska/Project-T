@@ -3,40 +3,40 @@
     justify-content: space-between;
     align-items: center;
     background-color: #333;
-    padding: 5px 5px 5px 5px;
     color: white;
 }
 
 .navbar-logo {
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
 }
 
 .navbar-links {
     display: flex;
-    gap: 1rem;
 }
 
 .navbar-links a {
-    color: white;
-    text-decoration: none;
+    padding: 20px;
+    color: #C2B096;
     font-size: 1rem;
+    font-family: 'Inter', sans-serif;
 }
 
 .navbar-links a:hover {
-    color: #f0a500;
+    color: white;
 }
 
 .navbar-toggle {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    padding: 20px;
 }
 
 .bar {
+    background-color: #C2B096;
     width: 25px;
     height: 3px;
-    background-color: white;
     margin: 4px 0;
 }
 
@@ -44,7 +44,7 @@
 @media (max-width: 768px) {
     .navbar-links {
         position: absolute;
-        top: 60px;
+        top: 100px;
         left: 0;
         right: 0;
         background-color: #333;
@@ -57,11 +57,11 @@
     }
 
     .navbar-links.active {
-        height: 200px; /* Adjust based on your content */
+        height: auto;
     }
 
     .navbar-links a {
-        padding: 1rem;
+        padding: 20px;
         width: 100%;
         text-align: center;
     }
