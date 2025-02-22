@@ -3,10 +3,65 @@ body, html {
   background-color: #111;
 }
 
-h1 {
+h, h1, h2, p {
   color: whitesmoke;
+}
+
+.homepage {
+  min-width: 100%;
+
+  .banner {
+    height: 60rem;
+    margin-left: 50px;
+    margin-right: 50px;
+    overflow-y: hidden;
+  
+    img {
+      min-width: 100%;
+      position: relative;
+      top:-50%
+    }
+  }
+}
+
+.menu {
+  margin-top: 10rem;
+  display: inline-flex;
+  flex-direction: column;
   align-items: center;
-  font-size: 50px;
+  
+  height: 10000px;
+
+  .title {
+    align-items: center;
+    font-size: 60px;
+    font-family: 'lulo-clean-w01-one-bold, lulo-clean-w05-one-bold', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .submenu {
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .food {
+    margin-left: auto;
+    margin-right: auto;
+
+    h2 {
+      font-size: 40px;
+    } 
+  }
+  .columns {
+    td {
+      margin-top: 40px;
+    }
+    tr {
+      margin: 20px;
+    }
+  }
 }
 
 h2 {
