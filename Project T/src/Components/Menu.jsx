@@ -1,5 +1,4 @@
 import React from 'react'
-import "./Menu.css"
 import { FoodItem } from './FoodItem'
 
 export const Menu = () => {
