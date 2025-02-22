@@ -1,13 +1,16 @@
-import React from 'react'
-import "./Home.css"
+import React from "react";
 
-const Home = () => {
+export const Hom = () => {
     return (
-        <>
-            <p>
-                Home
-            </p>
-        </>
+        <div className="homepage">
+            <div className="banner">
+                <img src="src/assets/beaaans.png"/>
+            </div>
+            <div className="menu">
+                <h1>Menu</h1>
+            </div>
+        </div>
     )
 }
-export default Home
+
+export default Hom;

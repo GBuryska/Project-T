@@ -1,0 +1,22 @@
+.homepage {
+    min-width: 100%;
+  
+    .banner {
+      height: 50rem;
+      margin-left: 100px;
+      margin-right: 100px;
+      overflow-y: hidden;
+    
+      img {
+        width: 100%;
+        overflow-y: hidden;
+      }
+    }
+    
+    .menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+  }
