@@ -1,0 +1,106 @@
+.page{
+    background: black;
+}
+
+.head {
+    font-family: 'Inter', sans-serif;
+    margin: 0 200px;
+    background-color: black;
+    border-bottom: 1px solid white;
+
+    .form-header {
+        margin-left: 50px;
+        font-family: 'Inter', sans-serif;
+        font-size: 4rem;
+        font-weight: bold;
+        color: white;
+    }
+}
+
+
+.body {
+    background-color: black;
+    margin: 0 200px;
+    outline: 2px solid white;
+    padding-bottom: 50px;
+
+    form{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-basis: 80%;
+
+        .form-input {
+            textarea {
+                overflow: auto;
+                resize: none;
+                width: 400px;
+                height: 150px;
+                align-self: center;
+                margin-top: 10px;
+                outline: 2px solid white;
+                color: white;
+                padding: 2px;
+            }
+        }
+
+        .form-row{
+            display: inline-flex;
+            flex-direction: row;
+            gap: 30px;
+            margin: 50px 50px 0 40px;
+            flex-wrap: nowrap;
+
+            p, label{
+                text-align: left;
+                margin-left: 30px;
+                color: white;
+                font-family: 'Inter', sans-serif;
+                font-size: 12px;
+            }
+
+            .submit{
+                background-color: black;
+                outline: 2px solid white;
+                color: white;
+                width: 100px;
+                height: 40px;
+
+            }
+        }
+
+        .text-input {
+            outline: 2px solid white;
+            border-radius: 3px;
+            background-color: black;
+            color: white;
+            padding: 1px;
+            width: 200px;
+            max-height: 25px;
+            margin-top: 10px;
+            align-self: center;
+        }
+
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .flex-col {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-label {
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            color: white;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    }
+
+}
+
+
