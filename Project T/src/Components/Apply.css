@@ -45,7 +45,7 @@
             }
         }
 
-        .form-row{
+        .fr{
             display: inline-flex;
             flex-direction: row;
             gap: 30px;
@@ -60,7 +60,7 @@
                 font-size: 12px;
             }
 
-            .submit{
+            .sm{
                 background-color: black;
                 outline: 2px solid white;
                 color: white;
@@ -70,7 +70,7 @@
             }
         }
 
-        .text-input {
+        .ti {
             outline: 2px solid white;
             border-radius: 3px;
             background-color: black;
@@ -82,17 +82,17 @@
             align-self: center;
         }
 
-        .flex-row {
+        .fr {
             display: flex;
             flex-direction: row;
         }
 
-        .flex-col {
+        .fc {
             display: flex;
             flex-direction: column;
         }
 
-        .form-label {
+        .fl {
             font-family: 'Inter', sans-serif;
             font-size: 15px;
             color: white;
