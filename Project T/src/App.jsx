@@ -4,8 +4,8 @@ import Navbar from "./Components/Navbar.jsx";
 import Home from "./Components/Home.jsx";
 import "./App.css";
 import Menu from "./Components/Menu.jsx";
-import Events from "./Components/Events.jsx";
-import Apply from "./Components/Apply.jsx";
+import Evt from "./Components/Events.jsx";
+import Apl from "./Components/Apply.jsx";
 import Locations from "./Components/Locations.jsx";
 
 function App() {
@@ -16,8 +16,8 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/Menu" element={<Menu />} />
-                    <Route path="/Events" element={<Events />} />
-                    <Route path="/Apply" element={<Apply />} />
+                    <Route path="/Events" element={<Evt />} />
+                    <Route path="/Apply" element={<Apl />} />
                     <Route path="/Locations" element={<Locations />} />
                 </Routes>
             </div>

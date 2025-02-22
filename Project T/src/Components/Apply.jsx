@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Apply.css"
 
-const Apply = () => {
+const Apl = () => {
     return (
         <div className="page">
             <div className="head">
@@ -89,4 +89,4 @@ const Apply = () => {
         </div>
     )
 }
-export default Apply
+export default Apl
