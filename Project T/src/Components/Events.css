@@ -1,0 +1,23 @@
+.events-header {
+    display: flex;
+    align-content: center;
+    h2 {
+        color: white;
+        padding-top: 1rem;
+    }
+    h1 {
+        color: white;
+        padding-top: 0.1rem;
+        padding-left: 0.1rem;
+    }
+    p {
+        color: white;
+    }
+    .map{
+        padding-left: 1rem;
+    }
+    .logo-img {
+        height: 6rem;
+        width: 6rem;
+    }
+}
