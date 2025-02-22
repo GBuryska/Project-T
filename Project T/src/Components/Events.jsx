@@ -7,6 +7,7 @@ const CALENDAR_ID = '0bbe6d59ecf62b1ff4ed7910f3f8d25011f8e4cb6307a2033c4f47cafe3
 const API_KEY = 'AIzaSyBD__G41SU4AoqEruvy0pEaPoMdNRVyEnY';
 const DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
 
+
 const GoogleCalendar = () => {
     const [events, setEvents] = React.useState([]);
     const [isLoading, setIsLoading] = React.useState(true);
@@ -33,19 +34,7 @@ const GoogleCalendar = () => {
       
             for (let i = 0; i < 30; i++) {
               const currentDate = firstDayOfMonth.clone().add(i, 'days'); // Clone to avoid modifying the original
-      
-              // Format the date as you need it.  Here are some options:
-              // Option 1: Moment object (if you need to do more date manipulation later)
-              // dateArray.push(currentDate);
-      
-              // Option 2: Formatted string (e.g., "YYYY-MM-DD")
-              dateArray.push(currentDate.format('YYYY-MM-DD'));  // Or any format you prefer
-      
-              // Option 3:  Formatted string (e.g. "MM/DD/YYYY")
-              // dateArray.push(currentDate.format('MM/DD/YYYY'));
-      
-              // Option 4: Date object (if you need to use it with other date/time libraries)
-              // dateArray.push(currentDate.toDate());
+              dateArray.push(currentDate.format('YYYY-MM-DD'));
             }
             setDays(dateArray);
           };
@@ -73,25 +62,37 @@ const GoogleCalendar = () => {
           setIsLoading(false);
         });
     };
-          
-  // console.log(events);
-    // make an array of 30 days
-    // loop through and see if event falls on day
-  return (
-    <div>
-        {days.map((day) => {
-            console.log(day);
-            const event = events.find((e) => {
-                if (e.start.date === day) {
-                    return true;
+    let i =0;
+    let cur = '';
+    let objs = [];
+    return (
+        <div>
+            {days.map((day) => {
+                console.log(day);
+                const event = events.find((e) => {
+                    if (e.start.date === day) {
+                        return true;
+                    }
+                    return false;
+                });
+                console.log(event);
+                if (event) {
+                    cur = cur + event.start.date + ' ' + event.summary;
+                } else {
+                    cur = cur + day + ' ';
                 }
-                return false;
-            });
-
-            console.log(event);
-        })}
-    </div>
-  )
+                i++;
+                if (i == 7) {
+                    objs.push(<p>{cur}</p>);
+                    cur = '';
+                    i=0;
+                }
+            })}
+            {objs.map((obj) => {
+                return obj;
+            })}
+        </div>
+    )
 }
 
 const Events = () => {
