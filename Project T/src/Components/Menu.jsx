@@ -1,5 +1,5 @@
 import React from 'react'
-import { FoodItem } from './FoodItem'
+import { ite } from './FoodItem'
 
 export const Menu = () => {
     return (
@@ -13,11 +13,11 @@ export const Menu = () => {
             <br/>
             <div className="columns">
                 <div style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center' }}>
-                    <FoodItem name="CHEESE CURDS" price={11} description="A midwest favorite– served with your favorite dipping sauce."/>
-                    <FoodItem name="STUFFED + LOADED TATER KEGS" price={10} description="Six golden-fried spuds stuffed with bacon, chives, and melted cheddar cheese served with sour cream."/>
-                    <FoodItem name="FRIED JALAPENOS" price={8} description="Hand dipped and batter-fried sliced jalapeño coins"/>
-                    <FoodItem name="CRISPY ONION STRINGS" price={8} description="Hand dipped and batter-fried shoelace cut onions"/>
-                    <FoodItem name="FRIED SHROOMS" price={8} description="Hand dipped and batter-fried sliced mushrooms"/>
+                    <ite name="CHEESE CURDS" price={11} description="A midwest favorite– served with your favorite dipping sauce."/>
+                    <ite name="STUFFED + LOADED TATER KEGS" price={10} description="Six golden-fried spuds stuffed with bacon, chives, and melted cheddar cheese served with sour cream."/>
+                    <ite name="FRIED JALAPENOS" price={8} description="Hand dipped and batter-fried sliced jalapeño coins"/>
+                    <ite name="CRISPY ONION STRINGS" price={8} description="Hand dipped and batter-fried shoelace cut onions"/>
+                    <ite name="FRIED SHROOMS" price={8} description="Hand dipped and batter-fried sliced mushrooms"/>
                 </div>
             </div>
             <br/>
@@ -27,9 +27,9 @@ export const Menu = () => {
             <br/>
             <div className="columns">
                 <div style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center' }}>
-                    <FoodItem name="CHICKEN STRIPS" price={13} description={"Tender chicken fillets batter-fried to crispy perfection and served with your choice of side"}/>
-                    <FoodItem name="SHRIMP BASKET" price={13} description="six house-battered and fried jumbo shrimp served with your choice of side, Tartar Sauce, Cocktail Sauce, and a lemon slice"/>
-                    <FoodItem name="HOUSE SALAD" price={8} description="Lettuce, tomato, red onion, cucumber, shredded cheese; topped with croutons Add Chicken $4 | Add Avocado\nDressings: Ranch, Bleu Cheese, Caesar, Honey Mustard, French, Thousand Island"/>
+                    <ite name="CHICKEN STRIPS" price={13} description={"Tender chicken fillets batter-fried to crispy perfection and served with your choice of side"}/>
+                    <ite name="SHRIMP BASKET" price={13} description="six house-battered and fried jumbo shrimp served with your choice of side, Tartar Sauce, Cocktail Sauce, and a lemon slice"/>
+                    <ite name="HOUSE SALAD" price={8} description="Lettuce, tomato, red onion, cucumber, shredded cheese; topped with croutons Add Chicken $4 | Add Avocado\nDressings: Ranch, Bleu Cheese, Caesar, Honey Mustard, French, Thousand Island"/>
                 </div>
             </div>
         </div> 

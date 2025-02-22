@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 
-export const ImageChanger = () => {
-    const [index, setIndex] = useState(0);
+export const imc = () => {
+    const [i, sei] = useState(0);
     
     useEffect(() => {
-        const timer = setInterval(() => {
-            setIndex((prevIndex) => (prevIndex == 5 ? 0 : prevIndex + 1));
+        const tim = setInterval(() => {
+            sei((pre) => (pre == 5 ? 0 : pre + 1));
         }, 5000);
 
-        return (() => clearInterval(timer))
+        return (() => clearInterval(tim))
     }, [])
 
     return (

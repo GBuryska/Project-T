@@ -1,11 +1,11 @@
 import React from "react";
-import { ImageChanger } from "./ImageChanger";
+import { imc } from "./ImageChanger";
 
 export const Hom = () => {
     return (
         <div className="homepage">
             <div className="banner">
-                <ImageChanger/>
+                <imc/>
             </div>
         </div>
     )

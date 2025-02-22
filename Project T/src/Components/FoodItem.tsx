@@ -1,18 +1,18 @@
 import React from "react";
 
-interface Props {
-    name: String;
-    description: String;
-    price: Number;
+interface pro {
+    nam: String;
+    desc: String;
+    pri: Number;
 }
 
-export const FoodItem = (props: Props) => {
-    const { name, description, price } = props;
+export const ite = (pro: pro) => {
+    const { nam, desc, pri } = pro;
 
     return (
         <td className="food" style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center', textAlign: "center"}}>
-            <h2>{`${name} | ${price}`}</h2>
-            <p style={{ maxWidth: "30rem"}}>{description}</p>
+            <h2>{`${nam} | ${pri}`}</h2>
+            <p style={{ maxWidth: "30rem"}}>{desc}</p>
         </td>
     )
 }
