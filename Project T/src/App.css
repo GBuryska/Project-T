@@ -11,7 +11,7 @@ h, h1, h2, p {
   min-width: 100%;
 
   .banner {
-    height: 60rem;
+    height: 600px;
     margin-left: 50px;
     margin-right: 50px;
     overflow-y: hidden;
@@ -19,7 +19,7 @@ h, h1, h2, p {
     img {
       min-width: 100%;
       position: relative;
-      top:-50%
+      top:-65%
     }
   }
 }
@@ -34,14 +34,14 @@ h, h1, h2, p {
 
   .title {
     align-items: center;
-    font-size: 60px;
+    font-size: 80px;
     font-family: 'lulo-clean-w01-one-bold, lulo-clean-w05-one-bold', sans-serif;
     margin-left: auto;
     margin-right: auto;
   }
 
   .submenu {
-    font-size: 50px;
+    font-size: 70px;
     margin-left: auto;
     margin-right: auto;
   }
