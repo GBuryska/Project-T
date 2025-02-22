@@ -14,6 +14,8 @@ const Events = () => {
             <p>Lucky's on third hosts weekly Tuesday night trivia, Wednesday night bingo, and Thursday night karaoke</p>
             <p>**keep an eye on our Instagram for cancellations + theme nights!**</p>
             <iframe className='map' src="https://calendar.google.com/calendar/embed?src=0bbe6d59ecf62b1ff4ed7910f3f8d25011f8e4cb6307a2033c4f47cafe3bd4f4%40group.calendar.google.com&ctz=America%2FChicago" style={ {border: 0, width: 800, height: 600, frameborder: 0, scrolling: "no"}}></iframe>
+            <a href='/Apply'><img src='src/Assets/work.png'></img></a>
+            <img src='src/Assets/social.png'></img>
         </div>
         </>
     )
